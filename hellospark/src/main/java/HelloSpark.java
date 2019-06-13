@@ -65,3 +65,15 @@ public class HelloSpark {
  * $ rm -rf /home/yong/stu-hadoop/hellospark/output
  * $ spark-submit --class HelloSpark /home/yong/stu-hadoop/hellospark/target/hello-spark-1.0-SNAPSHOT.jar /home/yong/stu-hadoop/hellospark/test_file.txt /home/yong/stu-hadoop/hellospark/output
  * */
+
+//在集群上运行
+/*
+ * $ hadoop dfsadmin -report
+ * $ echo $HADOOP_CONF_DIR
+ * $ hdfs dfs -mkdir -p /yong/spark
+ * $ hdfs dfs -put /home/yong/stu-hadoop/hellospark/test_file.txt /yong/spark/
+ * $ hdfs dfs -ls /yong/spark/
+ * $ spark-submit --master yarn --class HelloSpark /home/yong/stu-hadoop/hellospark/target/hello-spark-1.0-SNAPSHOT.jar /yong/spark/test_file.txt /yong/spark/output
+ * $ hdfs dfs -ls /yong/spark/output
+ * $ hdfs dfs -cat /yong/spark/output/part-00000
+ */
