@@ -18,6 +18,7 @@ public class HelloSpark {
         if (args.length != 2)
             return;
         //local，让spark运行在单机单线程上，而无需连接集群
+        //如果环境变量HADOOP_CONF_DIR有效，则setMaster()将失效
         SparkConf conf = new SparkConf().setMaster("local").setAppName("HelloSpark");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> input = sc.textFile(args[0]);
