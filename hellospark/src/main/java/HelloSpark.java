@@ -15,10 +15,12 @@ import java.util.List;
 
 public class HelloSpark {
     public static void main(String[] args) {
+        if (args.length != 2)
+            return;
         //local，让spark运行在单机单线程上，而无需连接集群
         SparkConf conf = new SparkConf().setMaster("local").setAppName("HelloSpark");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> input = sc.textFile("/home/yong/stu-hadoop/hellospark/test_file.txt");
+        JavaRDD<String> input = sc.textFile(args[0]);
         JavaRDD<String> words = input.flatMap(new FlatMapFunction<String, String>() {
             public Iterator<String> call(String s) throws Exception {
                 String[] list = s.split(" ");
@@ -48,7 +50,7 @@ public class HelloSpark {
                 return v1 + v2;
             }
         });
-        File outFile = new File("/home/yong/stu-hadoop/hellospark/output");
+        File outFile = new File(args[1]);
         counts.saveAsTextFile(outFile.getAbsolutePath());
     }
 }
@@ -61,5 +63,5 @@ public class HelloSpark {
  * export PATH=$PATH:$SPARK_HOME/bin
  * $ source ~/.bashrc
  * $ rm -rf /home/yong/stu-hadoop/hellospark/output
- * $ spark-submit --class HelloSpark /home/yong/stu-hadoop/hellospark/target/hello-spark-1.0-SNAPSHOT.jar
+ * $ spark-submit --class HelloSpark /home/yong/stu-hadoop/hellospark/target/hello-spark-1.0-SNAPSHOT.jar /home/yong/stu-hadoop/hellospark/test_file.txt /home/yong/stu-hadoop/hellospark/output
  * */

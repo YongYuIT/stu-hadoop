@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf0b0d4-c52f-4900-8e75-adca4398b4e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HelloSpark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloSpark.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HelloSpark.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="63" column="105" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="105" />
+            <state relative-caret-position="611">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#936#1676#0" expanded="true" />
@@ -119,6 +117,11 @@
               <item name="hellospark" type="b2602c69:ProjectViewProjectNode" />
               <item name="hellospark" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hellospark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hellospark" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -163,17 +166,26 @@
       <option name="presentableId" value="Default" />
       <updated>1560391863778</updated>
       <workItem from="1560391870244" duration="3202000" />
-      <workItem from="1560395328484" duration="1990000" />
+      <workItem from="1560395328484" duration="3151000" />
     </task>
+    <task id="LOCAL-00001" summary="try spark first time">
+      <created>1560397562343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560397562343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5192000" />
+    <option name="totallyTimeSpent" value="6353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25277162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25277162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -182,7 +194,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3293348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -207,6 +219,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="try spark first time" />
+    <option name="LAST_COMMIT_MESSAGE" value="try spark first time" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/context_test.java" />
@@ -250,15 +266,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output/part-00000">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7230">
+        <state relative-caret-position="15">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HelloSpark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="63" column="105" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="105" />
+        <state relative-caret-position="611">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#936#1676#0" expanded="true" />
