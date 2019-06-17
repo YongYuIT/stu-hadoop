@@ -58,8 +58,8 @@ public class Main {
         Put put = new Put(Bytes.toBytes("sid_003"));
         put.addColumn(Bytes.toBytes("basic_info"), Bytes.toBytes("name"), Bytes.toBytes("guoben"));
         put.addColumn(Bytes.toBytes("basic_info"), Bytes.toBytes("gen"), Bytes.toBytes("F"));
-        put.addColumn(Bytes.toBytes("basic_info"), Bytes.toBytes("desc"), Bytes.toBytes("fuck"));
-        put.addColumn(Bytes.toBytes("basic_info"), Bytes.toBytes("add"), Bytes.toBytes("hubei"));
+        put.addColumn(Bytes.toBytes("more_info"), Bytes.toBytes("desc"), Bytes.toBytes("fuck"));
+        put.addColumn(Bytes.toBytes("more_info"), Bytes.toBytes("add"), Bytes.toBytes("hubei"));
         table.put(put);
         System.out.println("put success!");
 
