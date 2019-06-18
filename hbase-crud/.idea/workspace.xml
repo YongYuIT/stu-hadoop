@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0d01974-a4e3-42f8-91e7-9227a56f6d7f" name="Default Changelist" comment="" />
+    <list default="true" id="f0d01974-a4e3-42f8-91e7-9227a56f6d7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PutTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,20 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PutTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="366">
+              <caret line="71" column="166" selection-end-line="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CreateTabTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="240">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +87,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/GetTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PutTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CreateTabTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PutTest.java" />
       </list>
     </option>
   </component>
@@ -92,6 +98,22 @@
         <option name="localRepository" value="/mnt/hgfs/java-env/maven_cache/repository" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="hbase-crud" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="hbase-crud" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
@@ -173,17 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreateTabTest.modifyTable">
-    <configuration name="CreateTabTest.createStuTab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hbase-crud" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateTabTest" />
-      <option name="METHOD_NAME" value="createStuTab" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PutTest.checkAndPutOptTest">
     <configuration name="CreateTabTest.modifyTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hbase-crud" />
       <option name="PACKAGE_NAME" value="" />
@@ -204,11 +216,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PutTest.checkAndPutOptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hbase-crud" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PutTest" />
+      <option name="METHOD_NAME" value="checkAndPutOptTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PutTest.checkAndPutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hbase-crud" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PutTest" />
+      <option name="METHOD_NAME" value="checkAndPutTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PutTest.putTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hbase-crud" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PutTest" />
+      <option name="METHOD_NAME" value="putTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PutTest.checkAndPutOptTest" />
+        <item itemvalue="JUnit.PutTest.checkAndPutTest" />
+        <item itemvalue="JUnit.PutTest.putTest" />
         <item itemvalue="JUnit.CreateTabTest.modifyTable" />
         <item itemvalue="JUnit.CreateTabTest.modifyTable_add" />
-        <item itemvalue="JUnit.CreateTabTest.createStuTab" />
       </list>
     </recent_temporary>
   </component>
@@ -222,44 +266,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560842511740</updated>
-      <workItem from="1560842513209" duration="5300000" />
+      <workItem from="1560842513209" duration="7723000" />
     </task>
+    <task id="LOCAL-00001" summary="test create tab, modify tab">
+      <created>1560847955035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560847955035</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateTabTest_createStuTab - 2019.06.18 at 01h 30m 43s.xml">
-      <configuration name="CreateTabTest.createStuTab" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 33m 30s.xml">
-      <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 37m 50s.xml">
-      <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 38m 45s.xml">
-      <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 41m 27s.xml">
-      <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 41m 52s.xml">
-      <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 42m 10s.xml">
-      <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateTabTest_createStuTab - 2019.06.18 at 01h 42m 23s.xml">
-      <configuration name="CreateTabTest.createStuTab" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 42m 31s.xml">
       <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CreateTabTest_modifyTable_add - 2019.06.18 at 01h 45m 48s.xml">
       <configuration name="CreateTabTest.modifyTable_add" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CreateTabTest_modifyTable - 2019.06.18 at 01h 50m 24s.xml">
+      <configuration name="CreateTabTest.modifyTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PutTest_putTest - 2019.06.18 at 02h 54m 49s.xml">
+      <configuration name="PutTest.putTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PutTest_checkAndPutTest - 2019.06.18 at 03h 01m 09s.xml">
+      <configuration name="PutTest.checkAndPutTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PutTest_checkAndPutOptTest - 2019.06.18 at 03h 09m 14s.xml">
+      <configuration name="PutTest.checkAndPutOptTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PutTest_checkAndPutOptTest - 2019.06.18 at 03h 09m 47s.xml">
+      <configuration name="PutTest.checkAndPutOptTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PutTest_checkAndPutOptTest - 2019.06.18 at 03h 10m 18s.xml">
+      <configuration name="PutTest.checkAndPutOptTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PutTest_checkAndPutOptTest - 2019.06.18 at 03h 11m 19s.xml">
+      <configuration name="PutTest.checkAndPutOptTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PutTest_checkAndPutOptTest - 2019.06.18 at 03h 12m 01s.xml">
+      <configuration name="PutTest.checkAndPutOptTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5300000" />
+    <option name="totallyTimeSpent" value="7723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
@@ -270,7 +322,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1213969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -287,7 +339,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Maven" visible="true" weight="0.32982263" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Database" />
@@ -298,6 +350,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test create tab, modify tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="test create tab, modify tab" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/resources/hbase-site.xml">
@@ -321,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PutTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/hbase/hbase-client/2.2.0/hbase-client-2.2.0-sources.jar!/org/apache/hadoop/hbase/HTableDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -337,8 +386,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CreateTabTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="240">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PutTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="71" column="166" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
