@@ -7,19 +7,14 @@
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/PutTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/ScanTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/hbase-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-rdd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DistinctTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FlatMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IntersectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbase-crud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase-crud/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbase_filter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_filter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hellospark/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hellospark/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hellospark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hellospark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FilterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="348">
               <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -60,15 +55,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MapTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FlatMapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="35" selection-end-line="29" selection-end-column="3" />
+            <state relative-caret-position="413">
+              <caret line="32" selection-start-line="32" selection-end-line="36" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#539#681#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#652#880#0" expanded="true" />
+                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#941#1201#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DistinctTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/IntersectionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="120" selection-end-line="35" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MapTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" selection-start-line="21" selection-end-line="29" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,9 +119,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>FilterTest</find>
+      <find>MapTest</find>
+      <find>FlatMapTest</find>
+      <find>DistinctTest</find>
     </findStrings>
     <replaceStrings>
       <replace>MapTest</replace>
+      <replace>FlatMapTest</replace>
+      <replace>DistinctTest</replace>
+      <replace>IntersectionTest</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -101,6 +140,9 @@
         <option value="$PROJECT_DIR$/src/test/java/FilterRDDTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/FilterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/MapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FlatMapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DistinctTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/IntersectionTest.java" />
       </list>
     </option>
   </component>
@@ -201,12 +243,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561013081024</updated>
-      <workItem from="1561013085477" duration="4358000" />
+      <workItem from="1561013085477" duration="7520000" />
     </task>
+    <task id="LOCAL-00001" summary="try filter-rdd map-rdd">
+      <created>1561017665415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561017665416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4358000" />
+    <option name="totallyTimeSpent" value="7520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
@@ -217,9 +267,9 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" />
@@ -247,6 +297,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="try filter-rdd map-rdd" />
+    <option name="LAST_COMMIT_MESSAGE" value="try filter-rdd map-rdd" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/FilterRDDTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -266,9 +320,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar!/org/apache/spark/api/java/AbstractJavaRDDLike.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FilterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="348">
           <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -282,12 +343,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" selection-end-line="29" selection-end-column="3" />
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="29" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#539#681#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlatMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="32" selection-start-line="32" selection-end-line="36" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#652#880#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#941#1201#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DistinctTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/IntersectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="120" selection-end-line="35" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
