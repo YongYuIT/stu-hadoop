@@ -1,3 +1,5 @@
+package transform_test;
+
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -9,7 +11,7 @@ import java.util.Iterator;
 
 public class FlatMapTest {
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setMaster("local").setAppName("FlatMapTest");
+        SparkConf conf = new SparkConf().setMaster("local").setAppName("transform_test.FlatMapTest");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> orgValues = sc.parallelize(Arrays.asList("A B", "C D", "E F"));
         JavaRDD<String> mapResult = orgValues.map(new Function<String, String>() {
@@ -33,5 +35,5 @@ public class FlatMapTest {
 /*
  * $ hadoop dfsadmin -report
  * $ echo $HADOOP_CONF_DIR
- * $ spark-submit --master yarn --class FlatMapTest /home/yong/stu-hadoop/spark-rdd/target/spark-rdd-1.0-SNAPSHOT.jar
+ * $ spark-submit --master yarn --class transform_test.FlatMapTest /home/yong/stu-hadoop/spark-rdd/target/spark-rdd-1.0-SNAPSHOT.jar
  */

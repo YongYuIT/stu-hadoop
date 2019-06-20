@@ -1,3 +1,5 @@
+package transform_test;
+
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -9,7 +11,7 @@ import java.util.Arrays;
 public class IntersectionTest {
     //IntersectionTest返回两个RDD中都有的数据，也会导致全网数据混洗，开销大
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setMaster("local").setAppName("IntersectionTest");
+        SparkConf conf = new SparkConf().setMaster("local").setAppName("transform_test.IntersectionTest");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<Integer> rdd1 = sc.parallelize(Arrays.asList(1, 1, 2, 2, 3, 3, 4, 5, 6));
         JavaRDD<Integer> rdd2 = sc.parallelize(Arrays.asList(1, 1, 2, 5, 6, 7, 7, 8, 9));
@@ -32,5 +34,5 @@ public class IntersectionTest {
 /*
  * $ hadoop dfsadmin -report
  * $ echo $HADOOP_CONF_DIR
- * $ spark-submit --master yarn --class IntersectionTest /home/yong/stu-hadoop/spark-rdd/target/spark-rdd-1.0-SNAPSHOT.jar
+ * $ spark-submit --master yarn --class transform_test.IntersectionTest /home/yong/stu-hadoop/spark-rdd/target/spark-rdd-1.0-SNAPSHOT.jar
  */

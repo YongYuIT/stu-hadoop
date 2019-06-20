@@ -1,14 +1,15 @@
+package transform_test;
+
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 
-import java.io.File;
 import java.util.Arrays;
 
 public class FilterTest {
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setMaster("local").setAppName("FilterTest");
+        SparkConf conf = new SparkConf().setMaster("local").setAppName("transform_test.FilterTest");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         JavaRDD<String> words = sc.parallelize(Arrays.asList("Hello", "Hi", "this", "main", "must", "shell", "java"));
@@ -35,9 +36,9 @@ public class FilterTest {
 /*
  * $ hadoop dfsadmin -report
  * $ echo $HADOOP_CONF_DIR
- * $ hdfs dfs -rm -r /yong/spark/FilterTest/*
- * $ hdfs dfs -mkdir -p /yong/spark/FilterTest
- * $ spark-submit --master yarn --class FilterTest /home/yong/stu-hadoop/spark-rdd/target/spark-rdd-1.0-SNAPSHOT.jar /yong/spark/FilterTest/output
- * $ hdfs dfs -ls /yong/spark/FilterTest/output
- * $ hdfs dfs -cat /yong/spark/FilterTest/output/part-00000
+ * $ hdfs dfs -rm -r /yong/spark/transform_test.FilterTest/*
+ * $ hdfs dfs -mkdir -p /yong/spark/transform_test.FilterTest
+ * $ spark-submit --master yarn --class transform_test.FilterTest /home/yong/stu-hadoop/spark-rdd/target/spark-rdd-1.0-SNAPSHOT.jar /yong/spark/transform_test.FilterTest/output
+ * $ hdfs dfs -ls /yong/spark/transform_test.FilterTest/output
+ * $ hdfs dfs -cat /yong/spark/transform_test.FilterTest/output/part-00000
  */
