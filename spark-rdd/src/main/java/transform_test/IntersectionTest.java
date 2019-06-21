@@ -9,12 +9,13 @@ import scala.Tuple2;
 import java.util.Arrays;
 
 public class IntersectionTest {
-    //IntersectionTest返回两个RDD中都有的数据，也会导致全网数据混洗，开销大
+
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setMaster("local").setAppName("transform_test.IntersectionTest");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<Integer> rdd1 = sc.parallelize(Arrays.asList(1, 1, 2, 2, 3, 3, 4, 5, 6));
         JavaRDD<Integer> rdd2 = sc.parallelize(Arrays.asList(1, 1, 2, 5, 6, 7, 7, 8, 9));
+        //IntersectionTest返回两个RDD中都有的数据，也会导致全网数据混洗，开销大
         JavaRDD<Integer> intersectionResult = rdd1.intersection(rdd2);
         for (Integer integer : intersectionResult.collect()) {
             System.out.println("intersection----------------->" + integer);

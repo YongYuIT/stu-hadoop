@@ -9,6 +9,7 @@ import java.util.Arrays;
 
 public class MapTest {
     public static void main(String[] args) {
+        //map操作可以看成对RDD的遍历
         SparkConf conf = new SparkConf().setMaster("local").setAppName("transform_test.MapTest");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<Integer> orgValues = sc.parallelize(Arrays.asList(1, 2, 3, 4, 5, 6));
