@@ -63,10 +63,12 @@ public class TransformTest {
             }
         });
         JavaPairRDD<String, Float> avgResult = jpRddVal.mapValues(new Function<Integer, Tuple2<Integer, Integer>>() {
+            //map相当于遍历值，在遍历是就可以做一些初始的值处理工作，例如格式转换等
             public Tuple2 call(Integer v1) throws Exception {
                 return new Tuple2(v1, 1);
             }
         }).reduceByKey(new Function2<Tuple2<Integer, Integer>, Tuple2<Integer, Integer>, Tuple2<Integer, Integer>>() {
+            //reduce进行渐进式处理
             public Tuple2<Integer, Integer> call(Tuple2<Integer, Integer> v1, Tuple2<Integer, Integer> v2) throws Exception {
                 return new Tuple2<Integer, Integer>(v1._1 + v2._1, v1._2 + v2._2);
             }
