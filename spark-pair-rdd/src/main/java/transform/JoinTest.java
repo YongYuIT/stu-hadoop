@@ -43,14 +43,6 @@ public class JoinTest {
         for (Tuple2<Integer, Tuple2<Optional<String>, String>> integerTuple2Tuple2 : rightOutJoinResult.collect()) {
             System.out.println("rightOut join ## " + integerTuple2Tuple2._1 + ":" + (integerTuple2Tuple2._2._1.isPresent() ? integerTuple2Tuple2._2._1.get() : "null") + "-->" + integerTuple2Tuple2._2._2);
         }
-
-        //排序
-        for (Tuple2<Integer, Tuple2<Optional<String>, String>> integerTuple2Tuple2 : rightOutJoinResult.sortByKey().collect()) {
-            System.out.println("rightOut join #### " + integerTuple2Tuple2._1 + ":" + (integerTuple2Tuple2._2._1.isPresent() ? integerTuple2Tuple2._2._1.get() : "null") + "-->" + integerTuple2Tuple2._2._2);
-        }
-        for (Tuple2<Integer, Tuple2<Optional<String>, String>> integerTuple2Tuple2 : rightOutJoinResult.sortByKey(false).collect()) {
-            System.out.println("rightOut join ###### " + integerTuple2Tuple2._1 + ":" + (integerTuple2Tuple2._2._1.isPresent() ? integerTuple2Tuple2._2._1.get() : "null") + "-->" + integerTuple2Tuple2._2._2);
-        }
     }
 
     /*
