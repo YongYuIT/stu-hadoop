@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 public class CombineTest {
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setMaster("local").setAppName("TransformTest");
+        SparkConf conf = new SparkConf().setMaster("local").setAppName("CombineTest");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> orgRddValPart1 = sc.parallelize(Arrays.asList("yong 1", "ben 22", "ben 333", "yong 4444", "guo 55555", "yong 666666", "guo 12345678"));
         JavaRDD<String> orgRddValPart2 = sc.parallelize(Arrays.asList("jack 7777777", "Alis 88888888", "Alis 999999999", "jack 123", "guo 12345", "jack 1234567"));
@@ -64,5 +64,5 @@ public class CombineTest {
 /*
  * $ hadoop dfsadmin -report
  * $ echo $HADOOP_CONF_DIR
- * $ spark-submit --master yarn --class transform.CombineTest /home/yong/stu-hadoop/spark-pair-rdd/target/spark-pair-rdd-1.0-SNAPSHOT.jar
+ * $ spark-submit --master yarn --class transform.CombineTest /home/yong/stu-hadoop/spark-pair-rdd/target/spark-pair-rdd-1.0-SNAPSHOT.jar > CombineTest.log
  */
