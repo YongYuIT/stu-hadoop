@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="139a758a-0024-4b06-bf2e-05dd8d4cf0a2" name="Default Changelist" comment="">
+    <list default="true" id="139a758a-0024-4b06-bf2e-05dd8d4cf0a2" name="Default Changelist" comment="pair rdd">
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/CreateTabTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/GetTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/PutTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/ScanTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hbase-crud/target/test-classes/hbase-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/transform/CombineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbase-crud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase-crud/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbase_filter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_filter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hellospark/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hellospark/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hellospark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hellospark/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TransformTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TransformTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spark-rdd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-rdd/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,46 +24,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MapToPairTest.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/transform/CombineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
+            <state relative-caret-position="99">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#672#1003#0" expanded="true" />
-                <element signature="e#810#827#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#932#1263#0" expanded="true" />
+                <element signature="e#1105#1122#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1586#1783#0" expanded="true" />
+                <element signature="e#1782#1783#0" expanded="true" />
+                <element signature="e#1785#2169#0" expanded="true" />
+                <element signature="e#2168#2169#0" expanded="true" />
+                <element signature="e#2171#2481#0" expanded="true" />
+                <element signature="e#2480#2481#0" expanded="true" />
+                <element signature="e#2638#2837#0" expanded="true" />
+                <element signature="e#2836#2837#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TransformTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="70" column="27" selection-end-line="91" />
+            <state relative-caret-position="-315">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#785#1116#0" expanded="true" />
-                <element signature="e#619#636#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1219#1407#0" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
                 <element signature="e#1726#1978#0" expanded="true" />
                 <element signature="e#1977#1978#0" expanded="true" />
-                <element signature="e#3109#3126#0" expanded="true" />
-                <element signature="e#3288#3467#0" expanded="true" />
-                <element signature="e#3466#3467#0" expanded="true" />
-                <element signature="e#3808#3809#0" expanded="true" />
-                <element signature="e#3821#4020#0" expanded="true" />
-                <element signature="e#4019#4020#0" expanded="true" />
+                <element signature="e#3120#3137#0" expanded="true" />
+                <element signature="e#3538#3894#0" expanded="true" />
+                <element signature="e#3893#3894#0" expanded="true" />
+                <element signature="e#3906#4105#0" expanded="true" />
+                <element signature="e#4104#4105#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,6 +79,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Function1</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -86,6 +93,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MapToPairTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransformTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/transform/CombineTest.java" />
       </list>
     </option>
   </component>
@@ -123,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -132,28 +139,11 @@
               <item name="spark-pair-rdd" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark-pair-rdd" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spark-pair-rdd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spark-pair-rdd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spark-pair-rdd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spark-pair-rdd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spark-pair-rdd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spark-pair-rdd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,6 +178,8 @@
       <option name="presentableId" value="Default" />
       <updated>1561084943349</updated>
       <workItem from="1561084944875" duration="10238000" />
+      <workItem from="1561112473636" duration="126000" />
+      <workItem from="1561342343211" duration="9692000" />
     </task>
     <task id="LOCAL-00001" summary="pair rdd">
       <created>1561105501414</created>
@@ -196,37 +188,42 @@
       <option name="project" value="LOCAL" />
       <updated>1561105501414</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add comment">
+      <created>1561112554461</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561112554461</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10238000" />
+    <option name="totallyTimeSpent" value="20056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25554323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49390244" weight="0.3293348" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5066519" side_tool="true" visible="true" weight="0.3293348" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49334812" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49113083" visible="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4905765" weight="0.22464558" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5088692" side_tool="true" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.49944568" weight="0.3293348" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -236,6 +233,7 @@
       <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.22339246" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,18 +241,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pair rdd" />
-    <option name="LAST_COMMIT_MESSAGE" value="pair rdd" />
+    <MESSAGE value="add comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///mnt/hgfs/java-env/maven_cache/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.pom">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar!/org/apache/spark/api/java/AbstractJavaRDDLike.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -263,33 +255,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/transform_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MapToPairTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#672#1003#0" expanded="true" />
-            <element signature="e#810#827#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar!/org/apache/spark/api/java/JavaPairRDD.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="149" column="58" selection-start-line="149" selection-start-column="58" selection-end-line="149" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/transform_test.java" />
     <entry file="jar:///mnt/hgfs/java-env/jdk1.8.0_211/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
@@ -297,25 +263,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TransformTest.java">
+    <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar!/org/apache/spark/api/java/JavaPairRDD.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="70" column="27" selection-end-line="91" />
+        <state relative-caret-position="226">
+          <caret line="127" column="48" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MapToPairTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#785#1116#0" expanded="true" />
-            <element signature="e#619#636#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1219#1407#0" expanded="true" />
-            <element signature="e#1406#1407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TransformTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#1726#1978#0" expanded="true" />
             <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#3109#3126#0" expanded="true" />
-            <element signature="e#3288#3467#0" expanded="true" />
-            <element signature="e#3466#3467#0" expanded="true" />
-            <element signature="e#3808#3809#0" expanded="true" />
-            <element signature="e#3821#4020#0" expanded="true" />
-            <element signature="e#4019#4020#0" expanded="true" />
+            <element signature="e#3120#3137#0" expanded="true" />
+            <element signature="e#3538#3894#0" expanded="true" />
+            <element signature="e#3893#3894#0" expanded="true" />
+            <element signature="e#3906#4105#0" expanded="true" />
+            <element signature="e#4104#4105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/transform/CombineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#932#1263#0" expanded="true" />
+            <element signature="e#1105#1122#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1586#1783#0" expanded="true" />
+            <element signature="e#1782#1783#0" expanded="true" />
+            <element signature="e#1785#2169#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2171#2481#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+            <element signature="e#2638#2837#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
           </folding>
         </state>
       </provider>
