@@ -6,11 +6,9 @@ import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.spark.JavaHBaseContext;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
-import scala.Tuple2;
 
 import java.lang.reflect.Field;
 
@@ -67,7 +65,17 @@ public class DataToHBaseSimplePut {
 }
 
 /*
+COMPILATION ERROR :
+cannot access org.apache.spark.streaming.api.java.JavaDStream
+  class file for org.apache.spark.streaming.api.java.JavaDStream not found
 
+add dependency to pom :
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.12</artifactId>
+            <version>2.4.3</version>
+            <scope>provided</scope>
+        </dependency>
 $ hadoop dfsadmin -report
 $ echo $HADOOP_CONF_DIR
 $ hdfs dfs -rm -r /user/yong/input/com.thinking.DataToHBaseSimplePut/output
