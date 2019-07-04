@@ -73,4 +73,7 @@ $ hdfs dfs -ls /user/yong/input/com.thinking.DataToHBaseBatchPut/output
 $ spark-submit --jars $HBASE_HOME/lib/hbase-server-2.1.5.jar,\
 $HBASE_HOME/lib/hbase-mapreduce-2.1.5.jar \
 --master yarn --class com.thinking.DataToHBaseBatchPut /home/yong/stu-hadoop/saprk-data-to-hbase/target/saprk-data-to-hbase-1.0-SNAPSHOT-jar-with-dependencies.jar /user/yong/input/com.thinking.DataToHBaseBatchPut/*
-*/
+由于项目后期在pom里加入了对hbase-mapreduce的引用，所以运行以下命令也可以
+$ spark-submit --jars $HBASE_HOME/lib/hbase-server-2.1.5.jar \
+--master yarn --class com.thinking.DataToHBaseBatchPut /home/yong/stu-hadoop/saprk-data-to-hbase/target/saprk-data-to-hbase-1.0-SNAPSHOT-jar-with-dependencies.jar /user/yong/input/com.thinking.DataToHBaseBatchPut/*
+ */
