@@ -56,6 +56,23 @@ public class HelloSpark {
     }
 }
 
+//安装/配置spark环境（集中式/分布式都一样）
+//----------------------------------------------------------------------
+//在master机器上（实际上任意一台机器上都可以），先下载、解压spark包
+//下载时要注意，spark需要与Hadoop版本适配，即Choose a package type需要选正确
+//然后配置环境
+//$ gedit ~/.bashrc
+//export SPARK_HOME=/mnt/hgfs/hadoop-cluster-env/spark-2.4.3-bin-hadoop2.7
+//export PATH=$PATH:$SPARK_HOME/bin
+//$ source ~/.bashrc
+//然后就可以用spark-submit命令来提交自己的spark应用了
+//----------------------------------------------------------------------
+//总结一下，集中式/分布式 都只需要在任意一台机器中确保spark-submit命令能用即可
+//至于spark时如何找到Hadoop环境的
+//可以用SparkConf().setMaster("local")代码指定的方式
+//也可以用本机环境变量HADOOP_CONF_DIR来指示
+//两者同时具备时，环境变量HADOOP_CONF_DIR优先
+
 /*
  * $ cd hadoop-cluster-env/
  * $ tar zxvf spark-2.4.3-bin-hadoop2.7.tgz
