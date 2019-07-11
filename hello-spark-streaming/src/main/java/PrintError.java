@@ -6,7 +6,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
 public class PrintError {
     public static void main(String[] args) throws Exception {
-        SparkConf conf = new SparkConf().setMaster("local").setAppName("PrintError");
+        SparkConf conf = new SparkConf().setMaster("local[4]").setAppName("PrintError");
         JavaStreamingContext jssc = new JavaStreamingContext(conf, Durations.seconds(10));
         JavaDStream<String> inputStrm = jssc.socketTextStream("0.0.0.0", 7777);
         inputStrm.filter(new Function<String, Boolean>() {
@@ -20,7 +20,7 @@ public class PrintError {
 }
 /*
 $ export HADOOP_CONF_DIR=
-$ spark-submit --class PrintError /home/yong/stu-hadoop20190709001/hello-spark-streaming/target/hello-spark-streaming-1.0-SNAPSHOT.jar local[4]
+$ spark-submit --class PrintError /home/yong/stu-hadoop20190709001/hello-spark-streaming/target/hello-spark-streaming-1.0-SNAPSHOT.jar
 */
 
 /*
