@@ -45,4 +45,7 @@ $ hdfs dfs -ls /user/yong/input/ImputFromHDFSPath
 $ hdfs dfs -put /home/yong/stu-hadoop20190709001/hello-spark-streaming/test_data/test0 /user/yong/input/ImputFromHDFSPath/
 
 $ spark-submit --master yarn --class ImputFromHDFSPath /home/yong/stu-hadoop20190709001/hello-spark-streaming/target/hello-spark-streaming-1.0-SNAPSHOT.jar  > log.txt
+
+$ hdfs dfs -put /home/yong/stu-hadoop20190709001/hello-spark-streaming/test_data/test1 /user/yong/input/ImputFromHDFSPath/
+$ hdfs dfs -put /home/yong/stu-hadoop20190709001/hello-spark-streaming/test_data/test2 /user/yong/input/ImputFromHDFSPath/
 */
