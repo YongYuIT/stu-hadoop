@@ -1,0 +1,22 @@
+option java_package = "com.thinking.grpc.proto";
+option java_outer_classname = "StuFractionalProto";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+option optimize_for = SPEED;
+
+message GetFractionalInfoReq {
+    required string place = 1;
+    required string type = 2;
+}
+
+message GetFractionalInfoResp {
+    required string place = 1;
+    required string type = 2;
+    required float fractional = 3;
+}
+
+service FractionalInfoService {
+    rpc GetFractionalInfo (GetFractionalInfoReq) returns (GetFractionalInfoResp);
+}
+//$ cd /home/yong/stu-hadoop20190717001/hello-hbase-coprocessor
+//$ protoc -Isrc/main/resources --java_out=src/main/java src/main/resources/FractionalInfoService.proto
