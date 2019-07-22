@@ -18,5 +18,5 @@ message GetFractionalInfoResp {
 service FractionalInfoService {
     rpc GetFractionalInfo (GetFractionalInfoReq) returns (GetFractionalInfoResp);
 }
-//$ cd /home/yong/stu-hadoop20190717001/hello-hbase-coprocessor
+//$ cd /home/yong/stu-hadoop20190717001/hello-hbase-coprocessor-client/
 //$ protoc -Isrc/main/resources --java_out=src/main/java src/main/resources/FractionalInfoService.proto

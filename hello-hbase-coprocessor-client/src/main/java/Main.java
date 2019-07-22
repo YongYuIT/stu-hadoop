@@ -6,8 +6,11 @@ import org.apache.hadoop.hbase.client.Connection;
 import org.apache.hadoop.hbase.client.ConnectionFactory;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Table;
+import org.apache.hadoop.hbase.client.coprocessor.Batch;
+import org.apache.hadoop.hbase.ipc.CoprocessorRpcUtils;
 import org.apache.hadoop.hbase.util.Bytes;
 
+import java.io.IOException;
 import java.util.Map;
 
 public class Main {
@@ -33,7 +36,14 @@ public class Main {
         table.put(putBen);
 
         StuFractionalProto.GetFractionalInfoReq req = StuFractionalProto.GetFractionalInfoReq.newBuilder().setPlace("hubei").setType("MAX").build();
-        Map<byte[], Float> result = table.coprocessorService(StuFractionalProto.FractionalInfoService.class, null, null, new EndpointCallable(req));
+        Map<byte[], Float> result = table.coprocessorService(StuFractionalProto.FractionalInfoService.class, null, null, new Batch.Call<StuFractionalProto.FractionalInfoService, Float>() {
+            @Override
+            public Float call(StuFractionalProto.FractionalInfoService instance) throws IOException {
+                CoprocessorRpcUtils.BlockingRpcCallback<StuFractionalProto.GetFractionalInfoResp> callback = new CoprocessorRpcUtils.BlockingRpcCallback();
+                instance.getFractionalInfo(null, req, callback);
+                return callback.get().getFractional();
+            }
+        });
         for (byte[] bytes : result.keySet()) {
             System.out.println(Bytes.toString(bytes) + "-->" + result.get(bytes));
         }
