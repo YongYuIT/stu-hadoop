@@ -11,9 +11,11 @@ import org.apache.hadoop.hbase.coprocessor.RegionCoprocessorEnvironment;
 import org.apache.hadoop.hbase.coprocessor.RegionObserver;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.hbase.wal.WALEdit;
+import org.apache.hadoop.util.Time;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 public class BirthplaceToStu implements RegionObserver, RegionCoprocessor {
@@ -25,12 +27,18 @@ public class BirthplaceToStu implements RegionObserver, RegionCoprocessor {
         return Optional.of(observer);
     }
 
+    @Override
     public void prePut(ObserverContext<RegionCoprocessorEnvironment> c, Put put, WALEdit edit, Durability durability) throws IOException {
+        //静态加载的协处理器会对所有表的prePut生效，动态加载的协处理器只对指定的表起作用
+        long callId = Time.now();
+        System.out.println("----------------------call prePut start-->" + callId);
         List<Cell> birthplace = put.get(Bytes.toBytes("basic_info"), Bytes.toBytes("birthplace"));
         if (birthplace == null || birthplace.size() == 0) {
             System.out.println("----------------------birthplace is empty");
+            System.out.println("----------------------call prePut end-->" + callId);
             return;
         }
+        System.out.println("----------------------birthplace is not empty");
         String stuId = Bytes.toString(put.getRow());
         System.out.println("----------------------stuId=" + stuId);
         String sBirthplace = Bytes.toString(CellUtil.cloneValue(birthplace.get(0)));
@@ -39,8 +47,17 @@ public class BirthplaceToStu implements RegionObserver, RegionCoprocessor {
         Connection connection = c.getEnvironment().getConnection();
         TableName tableName = TableName.valueOf("birthplace_stu_index");
         Table table = connection.getTable(tableName);
-        table.put(index);
-        table.close();//这样干效率不高
+        for (Map.Entry<byte[], List<Cell>> listEntry : index.getFamilyCellMap().entrySet()) {
+            System.out.println("---------------------- index family-->" + Bytes.toString(listEntry.getKey()) + "-->" + callId);
+        }
+        try {
+            table.put(index);
+        } catch (IOException e) {
+            System.out.println("----------------------put error-->" + e.getMessage() + "-->" + callId);
+        } finally {
+            table.close();//这样干效率不高
+        }
+        System.out.println("----------------------call prePut end-->" + callId);
     }
 }
 

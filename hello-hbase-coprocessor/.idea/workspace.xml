@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0490e2d8-dddb-4cfd-b9c2-f77b8aa03c0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/hello-hbase-coprocessor-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/java/EndpointCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/resources/FractionalInfoService.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thinking/grpc/impl/FractionalInfoEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FractionalInfoService.proto" afterDir="false" />
+    <list default="true" id="0490e2d8-dddb-4cfd-b9c2-f77b8aa03c0e" name="Default Changelist" comment="hbase coprocessor simple try success">
+      <change afterPath="$PROJECT_DIR$/../huitu/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../huitu/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-data-from-hbase/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/java/EndpointCallable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/resources/FractionalInfoService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../hello-hbase-coprocessor-client/src/main/resources/FractionalInfoService.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BirthplaceToStu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BirthplaceToStu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thinking/grpc/impl/FractionalInfoEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thinking/grpc/impl/FractionalInfoEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark-data-from-hbase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-data-from-hbase/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,36 +28,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BirthplaceToStu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/grpc/impl/FractionalInfoEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-127">
-              <caret line="78" column="128" selection-start-line="78" selection-start-column="118" selection-end-line="78" selection-end-column="128" />
+            <state relative-caret-position="255">
+              <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,10 +62,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/BirthplaceToStu.java" />
         <option value="$PROJECT_DIR$/src/main/resources/getBitrhplaceStuInfo.proto" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/FractionalInfoService.proto" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/BirthplaceToStu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thinking/grpc/impl/FractionalInfoEndpoint.java" />
       </list>
     </option>
@@ -121,8 +96,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="70" />
     <option name="y" value="27" />
-    <option name="width" value="639" />
-    <option name="height" value="453" />
+    <option name="width" value="1357" />
+    <option name="height" value="678" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -164,6 +139,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="grpc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hellohbasecoprocessor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hello-hbase-coprocessor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hellohbasecoprocessor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hello-hbase-coprocessor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -176,12 +167,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,7 +204,15 @@
       <workItem from="1563363784212" duration="482000" />
       <workItem from="1563415910069" duration="4862000" />
       <workItem from="1563504026627" duration="232000" />
-      <workItem from="1563504302731" duration="14147000" />
+      <workItem from="1563504302731" duration="14318000" />
+      <workItem from="1563763250375" duration="2792000" />
+      <workItem from="1563776230149" duration="576000" />
+      <workItem from="1563776990887" duration="1948000" />
+      <workItem from="1563779171487" duration="1394000" />
+      <workItem from="1563780728126" duration="382000" />
+      <workItem from="1563781232800" duration="337000" />
+      <workItem from="1563781629991" duration="5813000" />
+      <workItem from="1563787560292" duration="2870000" />
     </task>
     <task id="LOCAL-00001" summary="hbase coprocessor simple try success">
       <created>1563364202211</created>
@@ -225,12 +225,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32120000" />
+    <option name="totallyTimeSpent" value="48403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23558758" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12084257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -239,7 +240,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3031625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -247,7 +248,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4711014" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24972737" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -255,7 +256,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.17572062" />
+      <window_info active="true" anchor="right" id="Maven" order="5" visible="true" weight="0.17572062" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -350,42 +351,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/hello-hbase-coprocessor/grpc/FractionalInfoServiceProtos.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/hello-hbase-coprocessor/grpc/FractionalInfoServiceProtos.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/grpc/FractionalInfoProtos.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/impl.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/hbase/hbase-client/2.2.0/hbase-client-2.2.0-sources.jar!/org/apache/hadoop/hbase/client/Mutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="667" column="20" selection-start-line="667" selection-start-column="20" selection-end-line="667" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/hbase/hbase-client/2.2.0/hbase-client-2.2.0-sources.jar!/org/apache/hadoop/hbase/client/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="260" column="46" selection-start-line="260" selection-start-column="35" selection-end-line="260" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/hbase/hbase-server/2.2.0/hbase-server-2.2.0.jar!/org/apache/hadoop/hbase/coprocessor/RegionObserver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///mnt/hgfs/java-env/maven_cache/repository/org/apache/hbase/hbase-server/2.2.0/hbase-server-2.2.0-sources.jar!/org/apache/hadoop/hbase/coprocessor/RegionObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="373" column="15" selection-start-line="373" selection-start-column="15" selection-end-line="373" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FractionalInfoService.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BirthplaceToStu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
           <folding>
-            <element signature="e#0#70705#0" expanded="true" />
-            <element signature="method#registerAllExtensions#0;class#FractionalInfoServiceProtos#0" />
-            <element signature="method#registerAllExtensions#1;class#FractionalInfoServiceProtos#0" />
-            <element signature="class#GetFractionalInfoReqOrBuilder#0;class#FractionalInfoServiceProtos#0" />
-            <element signature="docComment;class#GetFractionalInfoReq#0;class#FractionalInfoServiceProtos#0" />
-            <element signature="class#GetFractionalInfoReq#0;class#FractionalInfoServiceProtos#0" />
-            <element signature="class#GetFractionalInfoRespOrBuilder#0;class#FractionalInfoServiceProtos#0" />
-            <element signature="docComment;class#GetFractionalInfoResp#0;class#FractionalInfoServiceProtos#0" />
-            <element signature="class#GetFractionalInfoResp#0;class#FractionalInfoServiceProtos#0" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/grpc/FractionalInfoProtos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3495">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/impl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/grpc/proto/StuFractionalProto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="1208" column="26" selection-start-line="1208" selection-start-column="26" selection-end-line="1208" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="1579" column="21" selection-start-line="1579" selection-start-column="21" selection-end-line="1579" selection-end-column="21" />
           <folding>
             <element signature="e#41466#41467#0" expanded="true" />
             <element signature="e#41515#41516#0" expanded="true" />
@@ -393,36 +417,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/FractionalInfoService.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="103" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thinking/grpc/impl/FractionalInfoEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="78" column="128" selection-start-line="78" selection-start-column="118" selection-end-line="78" selection-end-column="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BirthplaceToStu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
