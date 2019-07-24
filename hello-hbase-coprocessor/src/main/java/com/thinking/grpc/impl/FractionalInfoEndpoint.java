@@ -4,23 +4,43 @@ import com.google.protobuf.RpcCallback;
 import com.google.protobuf.RpcController;
 import com.google.protobuf.Service;
 import com.thinking.grpc.proto.StuFractionalProto;
-import org.apache.hadoop.hbase.Coprocessor;
 import org.apache.hadoop.hbase.CoprocessorEnvironment;
 import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Table;
-import org.apache.hadoop.hbase.coprocessor.CoprocessorService;
+import org.apache.hadoop.hbase.coprocessor.RegionCoprocessor;
 import org.apache.hadoop.hbase.coprocessor.RegionCoprocessorEnvironment;
 import org.apache.hadoop.hbase.shaded.protobuf.ResponseConverter;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class FractionalInfoEndpoint extends StuFractionalProto.FractionalInfoService implements Coprocessor, CoprocessorService {
+public class FractionalInfoEndpoint extends StuFractionalProto.FractionalInfoService implements RegionCoprocessor {
+
+
+    private RegionCoprocessorEnvironment environment;
+
+    @Override
+    public void start(CoprocessorEnvironment env) throws IOException {
+        System.out.println("----doing start----");
+        environment = (RegionCoprocessorEnvironment) env;
+    }
+
+    @Override
+    public void stop(CoprocessorEnvironment env) throws IOException {
+    }
+
+    @Override
+    public Iterable<Service> getServices() {
+        Service service = this;
+        return Collections.singleton(service);
+    }
+
     @Override
     public void getFractionalInfo(RpcController controller, StuFractionalProto.GetFractionalInfoReq request, RpcCallback<StuFractionalProto.GetFractionalInfoResp> done) {
         String type = request.getType();
@@ -44,21 +64,22 @@ public class FractionalInfoEndpoint extends StuFractionalProto.FractionalInfoSer
         done.run(result.build());
     }
 
-    private RegionCoprocessorEnvironment environment;
-
-    @Override
-    public void start(CoprocessorEnvironment env) throws IOException {
-        environment = (RegionCoprocessorEnvironment) env;
-    }
-
-    @Override
-    public Service getService() {
-        return this;
-    }
 
     private Result[] getvalue(String place) throws IOException {
+        System.out.println("doing getvalue");
         TableName tabPlaceStusName = TableName.valueOf("birthplace_stu_index");
-        Table tabPlaceStus = environment.getConnection().getTable(tabPlaceStusName);
+        Table tabPlaceStus = null;
+        try {
+            System.out.println("environment-->" + (environment == null ? "null" : "not null"));
+            System.out.println("environment.getConnection()-->" + (environment.getConnection() == null ? "null" : "not null"));
+            tabPlaceStus = environment.getConnection().getTable(tabPlaceStusName);
+        } catch (Exception e) {
+            System.out.println("get tab birthplace_stu_index error-->" + e.getMessage());
+        }
+        if (tabPlaceStus == null) {
+            return null;
+        }
+        System.out.println("get tab birthplace_stu_index success");
         Get getPalceStus = new Get(Bytes.toBytes(place));
         Result result = tabPlaceStus.get(getPalceStus);
         Map<byte[], byte[]> stusMap = result.getFamilyMap(Bytes.toBytes("birthplace_stu_info"));
@@ -171,4 +192,37 @@ $ gedit $HBASE_HOME/conf/hbase-site.xml
     <value>com.thinking.grpc.impl.FractionalInfoEndpoint</value>
   </property>
 $ start-hbase.sh
+*/
+
+
+/*
+####也可以动态部署
+$ stop-hbase.sh
+$ rm -rf $HBASE_HOME/lib/hell*
+$ cp -r /home/yong/stu-hadoop20190717001/hello-hbase-coprocessor/target/hello-hbase-coprocessor-1.0-SNAPSHOT-jar-with-dependencies.jar $HBASE_HOME/lib/
+$ gedit $HBASE_HOME/conf/hbase-site.xml
+    #  <property>
+    #    <name>hbase.coprocessor.user.region.classes</name>
+    #    <value>BirthplaceToStu</value>
+    #  </property>
+$ rm -rf $HBASE_HOME/logs/
+$ start-hbase.sh
+$ hbase shell
+> list
+> create 'student',{NAME=>'basic_info'},{NAME=>'more_info'}
+> disable 'student'
+> alter 'student', METHOD => 'table_att', 'coprocessor' => '|BirthplaceToStu||'
+> enable 'student'
+> describe 'student'
+> create 'birthplace_stu_index',{NAME=>'birthplace_stu_info'},{NAME=>'more_info'}
+> put 'student','stu-100001','basic_info:birthplace','hubei'
+> put 'student','stu-100001','basic_info:fractional','555'
+> put 'student','stu-100002','basic_info:birthplace','jiangxi'
+> put 'student','stu-100003','basic_info:fractional','556'
+> scan 'student'
+> scan 'birthplace_stu_index'
+> disable 'student'
+> alter 'student', METHOD => 'table_att', 'coprocessor' => '|com.thinking.grpc.impl.FractionalInfoEndpoint||'
+> enable 'student'
+> describe 'student'
 */

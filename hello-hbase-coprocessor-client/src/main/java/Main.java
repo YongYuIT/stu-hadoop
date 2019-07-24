@@ -17,7 +17,7 @@ public class Main {
     /*
      * $ cd src/main/resources
      * $ mkdir hbase
-     * $ cp $HBASE_HOME/conf/hbase-site.xml hbase/
+     * $ cp -r $HBASE_HOME/conf/hbase-site.xml hbase/
      */
     public static void main(String[] args) throws Throwable {
         Configuration configuration = HBaseConfiguration.create();
