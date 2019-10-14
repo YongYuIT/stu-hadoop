@@ -1,0 +1,5 @@
+url --> jdbc:mysql://30.23.9.255:3306/mlsc_xinfang_shenzhendb
+name --> com.mysql.cj.jdbc.Driver
+username --> dw_developer
+password --> dw_devRs#0
+sql --> select count(*) as count_num from xf_complain
